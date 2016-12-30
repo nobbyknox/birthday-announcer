@@ -1,7 +1,15 @@
 module.exports = {
     database: {
-        // The location of the SQLite database
-        filename: './data/birthdays.sqlite3'
+        host: '127.0.0.1',
+        user: 'user',
+        password: 'secret',
+        database: 'Birthday',
+
+        // The maximum number of connections to open in the pool
+        connectionLimit: 50,
+
+        // Should we be able to run multiple statements in one query? This must be `true`.
+        multipleStatements: true
     },
     logger: {
         // This name appears in the log file making it possible to log to a communal log file
