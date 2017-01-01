@@ -4,6 +4,7 @@ CREATE TABLE `Birthdays` (
     `day` int(11) NOT NULL,
     `month` int(11) NOT NULL,
     PRIMARY KEY (`id`),
+    UNIQUE KEY `Birthdays_name` (`name`),
     KEY `Birthdays_day` (`day`),
     KEY `Birthdays_month` (`month`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
